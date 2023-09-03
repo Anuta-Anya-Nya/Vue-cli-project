@@ -4,7 +4,7 @@
         <BannerMainPage />
         <ProjectBlog />
         <CounterBlock />
-        <BlogBlock />
+        <BlogBlock :posts="postsForIndex"/>
         <FooterBlock />
     </div>
 </template>
@@ -28,6 +28,7 @@ export default {
         CounterBlock,
         BlogBlock,
         FooterBlock},
+    props: ['postsForIndex'],
     data() {
         return {
 
