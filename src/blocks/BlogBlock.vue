@@ -1,23 +1,26 @@
 <template>
-  <div id="app">
-    <!-- <IndexPage />    -->
-    <BlogPage :latestPost="latestPost" :postsForBlog="postsForBlog"/> 
-  </div>
+    <section class="blog container">
+        <div class="heading blog__heading">
+            <h3 class="heading__title">Articles & News</h3>
+            <p class="heading__text">
+                It is a long established fact that a reader will be distracted by
+                the of readable content of a page when lookings at its layouts the
+                points of using.
+            </p>
+        </div>
+        <div class="blog__box">
+            <BlogArticle v-for="post in postsForIndex" :key="post.id" :post="post" class="blog-item" />
+        </div>
+    </section>
 </template>
 
 <script>
-// import IndexPage from './pages/IndexPage.vue'
-import BlogPage from './pages/BlogPage.vue'
-
+import BlogArticle from '../components/BlogArticle.vue'
 export default {
-  name: 'App',
-  components: {
-    // IndexPage,
-    BlogPage    
-  }, 
-  data() {
+    name: 'BlogBlock',
+    components: { BlogArticle },
+    data() {
         return {
-            // bannerImg: "@/assets/img/blog-banner.jpg",
             articles: [
                 {
                     id: 1, img: 'blog1.jpg', groupArticle: 'Kitchan Design', title: 'Let’s Get Solution For Building Construction Work', text: 'Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae turpis dignissim maximus.posuere in.Contrary to popular belief.', dataArticle: '26 December,2022'
@@ -41,9 +44,9 @@ export default {
                     id: 7, img: 'post-latest.jpg', groupArticle: 'Interior Design', title: 'Low Cost Latest Invented Interior Designing Ideas', text: 'Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae turpis dignissim maximus.posuere in.Contrary to popular belief.', simpleText: 'Lorem Ipsum is not simply random text. It has roots in a piece of classica.', dataArticle: '26 December,2022'
                 }
             ]
-            
         };
     },
+
     computed: {
         latestPost() {
             return this.articles[this.articles.length - 1];
@@ -57,31 +60,23 @@ export default {
 
     },
 
-}
+    methods: {
+
+    },
+};
 </script>
 
-<style lang="scss">
-#app {
-  margin-top: 53px;
-}
+<style lang="scss" scoped>
+.blog {
+    margin-bottom: 66px;
 
-  * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
+    &__heading {
+        margin-bottom: 52px;
     }
 
-    ul {
-        list-style: none;
+    &__box {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
     }
-
-    a {
-        text-decoration: none;
-    }
-
-    .container {
-        max-width: 1200px;
-        margin: 0 auto;
-    }
-
-</style>
+}</style>

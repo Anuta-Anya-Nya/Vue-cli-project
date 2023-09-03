@@ -51,5 +51,66 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.banner {
+    margin-bottom: 96px;
 
+    &__box {
+        min-height: 758px;
+        background: url(../assets/img/banner.jpg) center center no-repeat;
+        background-size: cover;
+        border-radius: 70px;
+        padding-left: 52px;
+        display: flex;
+        align-items: center;
+    }
+
+    &__content {
+        max-width: 434px;
+    }
+
+    &__title {
+        color: #292F36;
+        font-family: 'DM Serif Display', serif;
+        font-size: 65px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 125%;
+        margin-bottom: 18px;
+    }
+
+    &__text {
+        color: #4D5053;
+        font-family: 'Jost', sans-serif;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%;
+        letter-spacing: 0.22px;
+        margin-bottom: 21px;
+    }
+}
+
+.button {
+    background-color: #292F36;
+    padding: 26px 48px;
+    border-radius: 18px;
+    color: #FFFFFF;
+    text-align: center;
+    font-family: 'Jost', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 125%;
+    letter-spacing: 0.36px;
+    transition: all 0.3s;
+
+    svg {
+        margin-left: 10px;
+    }
+
+    &:hover {
+        color: #292F36;
+        background-color: #FFFFFF;
+    }
+}
 </style>
