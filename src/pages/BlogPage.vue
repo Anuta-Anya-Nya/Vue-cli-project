@@ -2,7 +2,7 @@
     <div>
         <HeaderBlock />
         <!-- <BannerPages :bannerImg="bannerImg"/> -->
-        <BannerPages />        
+        <BannerPages :isShowTitle="true"/>        
         <PostLatest :post="latestPost"/>
         <PostList :postsForBlog="postsForBlog"/>
         <FooterBlock />

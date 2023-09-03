@@ -1,19 +1,22 @@
 <template>
   <div id="app">
-    <!-- <IndexPage />    -->
-    <BlogPage :latestPost="latestPost" :postsForBlog="postsForBlog"/> 
+    <!-- <IndexPage :postsForIndex="postsForIndex"/>    -->
+    <!-- <BlogPage :latestPost="latestPost" :postsForBlog="postsForBlog"/>  -->
+    <BlogDetails />
   </div>
 </template>
 
 <script>
 // import IndexPage from './pages/IndexPage.vue'
-import BlogPage from './pages/BlogPage.vue'
+// import BlogPage from './pages/BlogPage.vue'
+import BlogDetails from './pages/BlogDetails.vue'
 
 export default {
   name: 'App',
   components: {
     // IndexPage,
-    BlogPage    
+    // BlogPage,
+    BlogDetails,    
   }, 
   data() {
         return {

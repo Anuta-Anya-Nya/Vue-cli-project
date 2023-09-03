@@ -1,6 +1,6 @@
 <template>
     <section class="blog-banner blog-banner-blog" >
-        <div class="blog-banner__text">
+        <div v-show="isShowTitle" class="blog-banner__text">
           <h3 class="blog-banner__title">Articles & News</h3>
           <nav class="breadCrumb">
             <a class="breadCrumb__link" href="index.html">Home</a
@@ -13,7 +13,7 @@
 <script>
 export default {
     name: 'BannerPages',
-    // props:['bannerImg'],
+    props:['isShowTitle'],
     data() {
         return {
             
