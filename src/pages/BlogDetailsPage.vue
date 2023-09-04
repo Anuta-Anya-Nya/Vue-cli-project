@@ -2,6 +2,7 @@
     <div>
         <HeaderBlock />
         <BannerPages :isShowTitle="false"/>
+        <BlogDetails :articles="articles" :postForDetails="postForDetails"/>
         <FooterBlock />
     </div>
 </template>
@@ -10,27 +11,17 @@
 import HeaderBlock from '../blocks/HeaderBlock.vue'
 import BannerPages from '../blocks/BannerPages.vue'
 import FooterBlock from '../blocks/FooterBlock.vue'
+import BlogDetails from '../blocks/BlogDetails.vue'
 export default {
-    name: 'BlogDetails',
+    name: 'BlogDetailsPage',
     components: {
         HeaderBlock,          
         FooterBlock,
         BannerPages,
-        
+        BlogDetails
     },
-    data() {
-        return {
-            
-        };
-    },
-
-    mounted() {
-        
-    },
-
-    methods: {
-        
-    },
+    props: ['articles', 'postForDetails'],
+    
 };
 </script>
 
