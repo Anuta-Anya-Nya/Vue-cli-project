@@ -8,7 +8,7 @@
       </p>
     </div>
     <div class="project__box">
-      <ProjectArticle v-for="item in projectArticles" :key="item.id" :item='item' />
+      <ProjectArticle v-for="item in projectArticles" :key="item.id" :item='item' :page="page"/>
     </div>
   </section>
 </template>
@@ -19,15 +19,11 @@ export default {
 
   name: 'ProjectBlog',
   components: { ProjectArticle },
+  props: ['projectArticles'],
 
   data() {
     return {
-      projectArticles: [
-        { id: 1, title: 'Modern Kitchan', text: 'Decor / Artchitecture', img: 'project1.jpg', class: 'borderTopRight' },
-        { id: 2, title: 'Modern Kitchan', text: 'Decor / Artchitecture', img: 'project2.jpg', class: 'borderTopLeft' },
-        { id: 3, title: 'Modern Kitchan', text: 'Decor / Artchitecture', img: 'project3.jpg', class: 'borderBotRight' },
-        { id: 4, title: 'Modern Kitchan', text: 'Decor / Artchitecture', img: 'project4.jpg', class: 'borderBotLeft' },
-      ],
+      page: 'homePage',
     };
   },
 
