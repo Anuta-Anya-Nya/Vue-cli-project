@@ -2,7 +2,7 @@
     <div>
         <HeaderBlock />
         <BannerMainPage />
-        <ProjectBlog />
+        <ProjectBlog :projectArticles="projectForIndex"/>
         <CounterBlock />
         <BlogBlock :posts="postsForIndex"/>
         <FooterBlock />
@@ -28,20 +28,7 @@ export default {
         CounterBlock,
         BlogBlock,
         FooterBlock},
-    props: ['postsForIndex'],
-    data() {
-        return {
-
-        };
-    },
-
-    mounted() {
-
-    },
-
-    methods: {
-
-    },
+    props: ['postsForIndex', 'projectForIndex'],    
 };
 </script>
 

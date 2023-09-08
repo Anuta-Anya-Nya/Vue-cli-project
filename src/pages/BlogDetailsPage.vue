@@ -1,7 +1,7 @@
 <template>
     <div>
         <HeaderBlock />
-        <BannerPages :isShowTitle="false"/>
+        <BannerPages :isShowTitle="false" :backgroundImg="backgroundImg"/>
         <BlogDetails :articles="articles" :postForDetails="postForDetails"/>
         <FooterBlock />
     </div>
@@ -21,6 +21,11 @@ export default {
         BlogDetails
     },
     props: ['articles', 'postForDetails'],
+    data() {
+        return {
+            backgroundImg: 'banner-blogdetails.jpg'
+        }
+    },
     
 };
 </script>

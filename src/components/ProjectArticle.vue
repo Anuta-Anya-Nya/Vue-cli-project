@@ -1,6 +1,6 @@
 <template>
-    <div class="proj-item">
-        <img :class="item.class" :src="require(`../assets/img/${item.img}`)" alt="our projects" />
+    <div class="proj-item" :class="item.classProjectPage">
+        <img :class="(page==pageThisArticle)?item.classHomepage:''" :src="require(`../assets/img/${item.img}`)" alt="our projects" />
         <div class="proj-item__about">
             <div>
                 <h4 class="proj-item__title">{{ item.title }}</h4>
@@ -16,20 +16,12 @@ import RoundBtn from './RoundBtn.vue'
 export default {
     name: 'ProjectArticle',
     components: { RoundBtn },
-    props: ['item'],
+    props: ['item', 'page'],
 
     data() {
         return {
-
+            pageThisArticle: 'homePage',
         };
-    },
-
-    mounted() {
-
-    },
-
-    methods: {
-
     },
 };
 </script>
@@ -99,5 +91,14 @@ export default {
     .borderBotLeft {
         border-bottom-left-radius: 80px;
     }
+
+    
 }
+.project-list-big {
+        grid-row: span 3;
+    }
+
+    .project-list-small {
+        grid-row: span 2;
+    }
 </style>

@@ -13,12 +13,14 @@
 <script>
 export default {
     name: 'BannerPages',
-    props:['isShowTitle'],
+    props:['isShowTitle', 'backgroundImg'],
     data() {
         return {
             
         };
     },
+    
+
 };
 </script>
 
@@ -33,9 +35,7 @@ export default {
     margin-bottom: 200px;
 
     &-blog {
-        background: url(@/assets/img/blog-banner.jpg) no-repeat bottom center;
-        // :style="{ 'backgroundImage': 'url(' + require(`${bannerImg}`) + ')'}"
-        
+        background: url(@/assets/img/blog-banner.jpg) no-repeat bottom center;  
     }
 
     &__text {
