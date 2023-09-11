@@ -4,6 +4,7 @@
     <!-- <BlogPage :latestPost="latestPost" :postsForBlog="postsForBlog"/>  -->
     <!-- <BlogDetailsPage :articles="articles" :postForDetails="postForDetails"/> -->
     <ProjectsPage :projects="projectArticles"/>
+    <ProjectDetailsPage />
   </div>
 </template>
 
@@ -11,7 +12,8 @@
 // import IndexPage from './pages/IndexPage.vue'
 // import BlogPage from './pages/BlogPage.vue'
 // import BlogDetailsPage from './pages/BlogDetailsPage.vue'
-import ProjectsPage from './pages/ProjectsPage.vue'
+// import ProjectsPage from './pages/ProjectsPage.vue'
+import ProjectDetailsPage from './pages/ProjectDetailsPage.vue'
 
 export default {
   name: 'App',
@@ -19,7 +21,8 @@ export default {
     // IndexPage,
     // BlogPage,
     // BlogDetailsPage,    
-    ProjectsPage
+    // ProjectsPage,
+    ProjectDetailsPage
   }, 
   data() {
         return {
