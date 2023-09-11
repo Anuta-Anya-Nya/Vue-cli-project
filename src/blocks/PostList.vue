@@ -13,12 +13,15 @@
 </template>
 
 <script>
+import { mapGetters } from 'vuex';
 import BlogArticle from '../components/BlogArticle.vue'
 import PaginationComponent from '../components/PaginationComponent.vue'
 export default {
     name: 'PostList',
-    components: {BlogArticle, PaginationComponent},
-    props: ['postsForBlog'],    
+    components: {BlogArticle, PaginationComponent},    
+    computed: {
+        ...mapGetters(['postsForBlog'])
+    }   
 };
 </script>
 

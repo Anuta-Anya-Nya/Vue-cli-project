@@ -1,8 +1,8 @@
 <template>
     <div>
         <HeaderBlock />
-        <BannerPages :isShowTitle="false" :backgroundImg="backgroundImg"/>
-        <BlogDetails :articles="articles" :postForDetails="postForDetails"/>
+        <BannerPages :isShowTitle="false" :classOfBanner="classOfBanner"/>
+        <BlogDetails />
         <FooterBlock />
     </div>
 </template>
@@ -20,10 +20,9 @@ export default {
         BannerPages,
         BlogDetails
     },
-    props: ['articles', 'postForDetails'],
     data() {
         return {
-            backgroundImg: 'banner-blogdetails.jpg'
+            classOfBanner: "blogDetailsPage"
         }
     },
     

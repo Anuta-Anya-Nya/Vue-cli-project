@@ -9,17 +9,20 @@
             </p>
         </div>
         <div class="blog__box">
-            <BlogArticle v-for="post in posts" :key="post.id" :post="post" class="blog-item" />
+            <BlogArticle v-for="post in postsForIndex" :key="post.id" :post="post" class="blog-item" />
         </div>
     </section>
 </template>
 
 <script>
+import { mapGetters } from 'vuex';
 import BlogArticle from '../components/BlogArticle.vue'
 export default {
     name: 'BlogBlock',
     components: { BlogArticle },
-    props:['posts'],    
+    computed: {
+        ...mapGetters(['postsForIndex'])
+    } 
 };
 </script>
 

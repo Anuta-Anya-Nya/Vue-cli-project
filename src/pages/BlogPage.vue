@@ -1,10 +1,9 @@
 <template>
     <div>
         <HeaderBlock />
-        <!-- <BannerPages :bannerImg="bannerImg"/> -->
-        <BannerPages :isShowTitle="true"/>        
-        <PostLatest :post="latestPost"/>
-        <PostList :postsForBlog="postsForBlog"/>
+        <BannerPages :isShowTitle="true" :classOfBanner="classOfBanner"/>        
+        <PostLatest />
+        <PostList />
         <FooterBlock />
     </div>
 </template>
@@ -27,21 +26,12 @@ export default {
         PostLatest,
         PostList
     },
-    props: ['latestPost', 'postsForBlog'],
     data() {
-        return {
-            // bannerImg: "@/assets/img/blog-banner.jpg"
-            
+        return {            
+            classOfBanner: "blogPage"
         };
     },
 
-    mounted() {
-
-    },
-
-    methods: {
-
-    },
 };
 </script>
 

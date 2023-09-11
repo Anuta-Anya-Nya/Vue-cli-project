@@ -1,8 +1,8 @@
 <template>
     <section class="blogDetails-box container">        
                     <div>
-                        <BlogDetailsPost :article="postForDetails"/>
-                        <BlogFilteredArticles :activeTag="activeTag" :articles="articles"/>
+                        <BlogDetailsPost />
+                        <BlogFilteredArticles :activeTag="activeTag"/>
                     </div>  
                     <TagButtonList @targetTag="getActiveTag" />
                 </section>
@@ -19,7 +19,6 @@ export default {
         BlogDetailsPost,
         BlogFilteredArticles
     },
-    props: ['postForDetails', 'articles'],
     data() {
         return {
             activeTag: '',

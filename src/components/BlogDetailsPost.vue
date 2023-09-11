@@ -1,11 +1,11 @@
 <template>
     <article class="blogDetails">
         <h3 class="blogDetails__title">
-            {{ article.title }}
+            {{ postForDetails.title }}
         </h3>
-        <img class="blogImg" :src="require(`@/assets/img/${article.img}`)" alt="blog" />
+        <img class="blogImg" :src="require(`@/assets/img/${postForDetails.img}`)" alt="blog" />
         <div class="blogDetails__info">
-            <div class="blogDetails__data">{{ article.dataArticle }}</div>
+            <div class="blogDetails__data">{{ postForDetails.dataArticle }}</div>
             <nav class="breadCrumb">
                 <a class="breadCrumb__link blogDetails__crumbs" href="#">Interior</a>
                 <a class="breadCrumb__link blogDetails__crumbs" href="#">Home</a>
@@ -13,18 +13,21 @@
             </nav>
         </div>
         <p>
-            {{ article.text }}
+            {{ postForDetails.text }}
         </p>
         <p>
-            {{ article.simpleText }}
+            {{ postForDetails.simpleText }}
         </p>
     </article>
 </template>
 
 <script>
+import { mapGetters } from 'vuex';
 export default {
     name: 'BlogDetailsPost',
-    props: ['article'],
+    computed:{
+        ...mapGetters(['postForDetails'])
+    }
 
 };
 </script>

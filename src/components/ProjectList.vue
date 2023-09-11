@@ -5,11 +5,12 @@
 </template>
 
 <script>
+import { mapGetters } from 'vuex';
 import ProjectArticle from '../components/ProjectArticle.vue';
 export default {
     name: 'ProjectList',
     components: { ProjectArticle },
-    props: ['articles', 'selectCategory'],
+    props: ['selectCategory'],
     data() {
         return {
             page: "projectPage",
@@ -17,11 +18,12 @@ export default {
     },
 
     computed: {
+        ...mapGetters(['projectArticles']),
         filterProjectByCategory() {
             if (this.selectCategory === '') {
-                return this.articles;
+                return this.projectArticles;
             } else {
-                return this.articles.filter(el => el.category.includes(this.selectCategory));
+                return this.projectArticles.filter(el => el.category.includes(this.selectCategory));
             }
         },
     },

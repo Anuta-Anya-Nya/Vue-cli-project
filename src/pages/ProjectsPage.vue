@@ -1,7 +1,8 @@
 <template>
     <div>
         <HeaderBlock />
-        <ProjectFilterList :projects="projects"/>
+        <BannerPages :isShowTitle="true" :classOfBanner="classOfBanner"/>
+        <ProjectFilterList />
         <FooterBlock />
         
     </div>
@@ -10,6 +11,7 @@
 <script>
 import HeaderBlock from '../blocks/HeaderBlock.vue';
 import FooterBlock from '../blocks/FooterBlock.vue';
+import BannerPages from '../blocks/BannerPages.vue'
 import ProjectFilterList from '../blocks/ProjectFilterList.vue'
 export default {
     name: 'ProjectsPage',
@@ -17,8 +19,13 @@ export default {
         HeaderBlock,          
         FooterBlock,
         ProjectFilterList,
+        BannerPages,
     },
-    props: ['projects'],
+    data() {
+        return {
+            classOfBanner: "projectsPage"
+        };
+    },
     
 };
 </script>

@@ -3,13 +3,13 @@
         <div class="container">
             <h3 class="latest-post__title">Latest Post</h3>
             <article class="latest-post__box">
-                <img class="latest-post__img" :src="require(`@/assets/img/${post.img}`)" alt="Latest Post" />
+                <img class="latest-post__img" :src="require(`@/assets/img/${latestPost.img}`)" alt="Latest Post" />
                 <div class="latest-post__content">
-                    <h4>{{ post.title }}</h4>
-                    <p>{{ post.text }}</p>
-                    <p>{{ post.simpleText }}</p>
+                    <h4>{{ latestPost.title }}</h4>
+                    <p>{{ latestPost.text }}</p>
+                    <p>{{ latestPost.simpleText }}</p>
                     <div class="blog-item__line">
-                        <div class="blog-item__data">{{ post.dataArticle }}</div>
+                        <div class="blog-item__data">{{ latestPost.dataArticle }}</div>
                         <a href="#" class="latest-post__button">
                             <svg width="52" height="53" viewBox="0 0 52 53" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <circle cx="26" cy="26.267" r="26" fill="#F4F0EC" />
@@ -25,15 +25,12 @@
 </template>
 
 <script>
+import { mapGetters } from 'vuex';
 export default {
     name: 'PostLatest',
-    props: ['post'],
-    data() {
-        return {
-
-        };
-    },
-
+    computed: {
+        ...mapGetters(['latestPost']),
+    }
 };
 </script>
 
@@ -110,26 +107,27 @@ export default {
             stroke: #F4F0EC;
         }
     }
-    .blog-item {
-    
-    &__line {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-bottom: 20px;
-    }
 
-    &__data {
-        color: #4D5053;
-        font-family: 'Jost', sans-serif;
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 150%;
-        /* 24px */
-        letter-spacing: 0.16px;
-        text-transform: capitalize;
+    .blog-item {
+
+        &__line {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        &__data {
+            color: #4D5053;
+            font-family: 'Jost', sans-serif;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 150%;
+            /* 24px */
+            letter-spacing: 0.16px;
+            text-transform: capitalize;
+        }
     }
-}
 }
 </style>

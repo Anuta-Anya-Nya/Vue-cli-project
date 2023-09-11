@@ -1,7 +1,7 @@
 <template>
     <section class="project-list container">
         <CategoryButtons @selectCategory="changeCategory" />
-        <ProjectList :selectCategory="category" :articles="projects"/>
+        <ProjectList :selectCategory="category" />
         <PaginationComponent />
     </section>
 </template>
@@ -17,7 +17,6 @@ export default {
         ProjectList,
         PaginationComponent
     },
-    props: ['projects'],
     data() {
         return {
             category: '',

@@ -1,7 +1,7 @@
 <template>
     <div>
         <HeaderBlock />
-        <BannerPages :isShowTitle="false" :backgroundImg="backgroundImg"/>
+        <BannerPages :isShowTitle="false" :classOfBanner="classOfBanner"/>
         
         <FooterBlock />
     </div>
@@ -23,7 +23,7 @@ export default {
 
     data() {
         return {
-            
+            classOfBanner: 'projectDetailsPage',
         };
     },
 

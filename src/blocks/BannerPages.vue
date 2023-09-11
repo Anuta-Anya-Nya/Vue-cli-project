@@ -1,5 +1,5 @@
 <template>
-    <section class="blog-banner blog-banner-blog" >
+    <section class="blog-banner blog-banner-blog" :class="classOfBanner">
         <div v-show="isShowTitle" class="blog-banner__text">
           <h3 class="blog-banner__title">Articles & News</h3>
           <nav class="breadCrumb">
@@ -13,7 +13,7 @@
 <script>
 export default {
     name: 'BannerPages',
-    props:['isShowTitle', 'backgroundImg'],
+    props:['isShowTitle', 'classOfBanner'],
     data() {
         return {
             
@@ -27,16 +27,11 @@ export default {
 <style lang="scss" scoped>
 .blog-banner {
     min-height: 356px;
-
     background-size: cover;
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    margin-bottom: 200px;
-
-    &-blog {
-        background: url(@/assets/img/blog-banner.jpg) no-repeat bottom center;  
-    }
+    margin-bottom: 200px;    
 
     &__text {
         background-color: #fff;
@@ -54,6 +49,18 @@ export default {
     }
 
 
+}
+.projectDetailsPage{
+    background: url(../../public/banner-proj-details.jpg) no-repeat bottom center;
+}
+.blogPage{    
+    background: url(@/assets/img/blog-banner.jpg) no-repeat bottom center;
+}
+.blogDetailsPage{
+    background: url(@/assets/img/banner-blogdetails.jpg) no-repeat bottom center;
+}
+.projectsPage{
+    background: url(@/assets/img/banner-project.jpg) no-repeat bottom center;
 }
 
 .breadCrumb {

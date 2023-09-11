@@ -8,18 +8,18 @@
       </p>
     </div>
     <div class="project__box">
-      <ProjectArticle v-for="item in projectArticles" :key="item.id" :item='item' :page="page"/>
+      <ProjectArticle v-for="item in projectForIndex" :key="item.id" :item='item' :page="page" />
     </div>
   </section>
 </template>
 
 <script>
+import { mapGetters } from 'vuex';
 import ProjectArticle from '../components/ProjectArticle.vue';
 export default {
 
   name: 'ProjectBlog',
   components: { ProjectArticle },
-  props: ['projectArticles'],
 
   data() {
     return {
@@ -27,12 +27,8 @@ export default {
     };
   },
 
-  mounted() {
-
-  },
-
-  methods: {
-
+  computed: {
+    ...mapGetters(['projectForIndex'])
   },
 };
 </script>
@@ -67,16 +63,15 @@ export default {
   }
 }
 
-  .project {
-    margin-bottom: 96px;
+.project {
+  margin-bottom: 96px;
 
-    &__box {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(300px, 1fr));
-      column-gap: 104px;
-      row-gap: 56px;
-    }
-
+  &__box {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(300px, 1fr));
+    column-gap: 104px;
+    row-gap: 56px;
   }
 
+}
 </style>

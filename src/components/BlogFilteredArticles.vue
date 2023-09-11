@@ -33,14 +33,16 @@
 </template>
 
 <script>
+import { mapGetters } from 'vuex';
 import ArticleFilteredForTag from './ArticleFilteredForTag.vue'
 export default {
     name: 'BlogFilteredArticles',
     components: {
         ArticleFilteredForTag,
     },
-    props: ["activeTag", "articles"],
+    props: ["activeTag"],
     computed: {
+        ...mapGetters(['articles']),
         getArticlesList() {
             if (this.activeTag === '') {
                 return this.articles;
