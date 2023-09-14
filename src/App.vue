@@ -13,19 +13,18 @@
 // import BlogPage from './pages/BlogPage.vue'
 // import BlogDetailsPage from './pages/BlogDetailsPage.vue'
 // import ProjectsPage from './pages/ProjectsPage.vue'
-import ProjectDetailsPage from './pages/ProjectDetailsPage.vue'
+import ProjectDetailsPage from "./pages/ProjectDetailsPage.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
     // IndexPage,
     // BlogPage,
-    // BlogDetailsPage,    
+    // BlogDetailsPage,
     // ProjectsPage,
-    ProjectDetailsPage
-  },   
-
-}
+    ProjectDetailsPage,
+  },
+};
 </script>
 
 <style lang="scss">
@@ -33,23 +32,23 @@ export default {
   margin-top: 53px;
 }
 
-  * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-    ul {
-        list-style: none;
-    }
+ul {
+  list-style: none;
+  padding-left: 0px;
+}
 
-    a {
-        text-decoration: none;
-    }
+a {
+  text-decoration: none;
+}
 
-    .container {
-        max-width: 1200px;
-        margin: 0 auto;
-    }
-
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
 </style>
