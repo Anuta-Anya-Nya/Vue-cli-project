@@ -113,6 +113,90 @@ export default new Vuex.Store({
                     { id: "img3", url: "slider-proj3.jpg" },
                 ],
             },
+            {
+                id: 13, title: 'Modern Kitchan', text: 'Decor / Artchitecture', img: 'project1.jpg', classHomepage: 'borderTopRight', category: 'Kitchan', classProjectPage: 'project-list-small', textDescription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquamsem vitae turpis dignissim maximus. Aliquam sollicitudin tellumassa, vbel maximus purus posuere in. Dojrices gravida dignissim. Praesent at nibh in mi fringilla mattis. Phasellus ut dolor odio. Aenean in the ipsum vel lectus bibendum commodo.', textDescription2: 'In nec sem suscipit, convallis leo vitae, lacinia nibh. Cras amet tellus lectus. Vivamus ipsum nunc, mattis quis nibh id, pellentesque arcu. Donec a pellentesque Cras erat enim, gravida non ante vitae,elequis convallis elit, in viverra felis. Donec ultrices tellus vitae iaculisvd porta. Proin tincidunt ligula id purus porttitor.', imgForSlider: [
+                    { id: "img1", url: "slider-proj.jpg" },
+                    { id: "img2", url: "slider-proj2.jpg" },
+                    { id: "img3", url: "slider-proj3.jpg" },
+                ],
+            },
+            {
+                id: 14, title: 'Modern Kitchan', text: 'Decor / Artchitecture', img: 'project2.jpg', classHomepage: 'borderTopLeft', category: 'Kitchan', classProjectPage: 'project-list-small', textDescription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquamsem vitae turpis dignissim maximus. Aliquam sollicitudin tellumassa, vbel maximus purus posuere in. Dojrices gravida dignissim. Praesent at nibh in mi fringilla mattis. Phasellus ut dolor odio. Aenean in the ipsum vel lectus bibendum commodo.', textDescription2: 'In nec sem suscipit, convallis leo vitae, lacinia nibh. Cras amet tellus lectus. Vivamus ipsum nunc, mattis quis nibh id, pellentesque arcu. Donec a pellentesque Cras erat enim, gravida non ante vitae,elequis convallis elit, in viverra felis. Donec ultrices tellus vitae iaculisvd porta. Proin tincidunt ligula id purus porttitor.', imgForSlider: [
+                    { id: "img1", url: "slider-proj.jpg" },
+                    { id: "img2", url: "slider-proj2.jpg" },
+                    { id: "img3", url: "slider-proj3.jpg" },
+                ],
+            },
+            {
+                id: 15, title: 'Modern Kitchan', text: 'Decor / Artchitecture', img: 'project3.jpg', classHomepage: 'borderBotRight', category: 'Bathroom', classProjectPage: 'project-list-small', textDescription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquamsem vitae turpis dignissim maximus. Aliquam sollicitudin tellumassa, vbel maximus purus posuere in. Dojrices gravida dignissim. Praesent at nibh in mi fringilla mattis. Phasellus ut dolor odio. Aenean in the ipsum vel lectus bibendum commodo.', textDescription2: 'In nec sem suscipit, convallis leo vitae, lacinia nibh. Cras amet tellus lectus. Vivamus ipsum nunc, mattis quis nibh id, pellentesque arcu. Donec a pellentesque Cras erat enim, gravida non ante vitae,elequis convallis elit, in viverra felis. Donec ultrices tellus vitae iaculisvd porta. Proin tincidunt ligula id purus porttitor.', imgForSlider: [
+                    { id: "img1", url: "slider-proj.jpg" },
+                    { id: "img2", url: "slider-proj2.jpg" },
+                    { id: "img3", url: "slider-proj3.jpg" },
+                ],
+            },
+            {
+                id: 16, title: 'Modern Kitchan', text: 'Decor / Artchitecture', img: 'project4.jpg', classHomepage: 'borderBotLeft', category: 'Kitchan', classProjectPage: 'project-list-small', textDescription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquamsem vitae turpis dignissim maximus. Aliquam sollicitudin tellumassa, vbel maximus purus posuere in. Dojrices gravida dignissim. Praesent at nibh in mi fringilla mattis. Phasellus ut dolor odio. Aenean in the ipsum vel lectus bibendum commodo.', textDescription2: 'In nec sem suscipit, convallis leo vitae, lacinia nibh. Cras amet tellus lectus. Vivamus ipsum nunc, mattis quis nibh id, pellentesque arcu. Donec a pellentesque Cras erat enim, gravida non ante vitae,elequis convallis elit, in viverra felis. Donec ultrices tellus vitae iaculisvd porta. Proin tincidunt ligula id purus porttitor.', imgForSlider: [
+                    { id: "img1", url: "slider-proj.jpg" },
+                    { id: "img2", url: "slider-proj2.jpg" },
+                    { id: "img3", url: "slider-proj3.jpg" },
+                ],
+            },
+            {
+                id: 17, title: 'Minimal Bedroom', text: 'Decor / Artchitecture', img: 'proj1.jpg', classHomepage: 'borderBotLeft', category: 'Bedroom', classProjectPage: 'project-list-big', textDescription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquamsem vitae turpis dignissim maximus. Aliquam sollicitudin tellumassa, vbel maximus purus posuere in. Dojrices gravida dignissim. Praesent at nibh in mi fringilla mattis. Phasellus ut dolor odio. Aenean in the ipsum vel lectus bibendum commodo.', textDescription2: 'In nec sem suscipit, convallis leo vitae, lacinia nibh. Cras amet tellus lectus. Vivamus ipsum nunc, mattis quis nibh id, pellentesque arcu. Donec a pellentesque Cras erat enim, gravida non ante vitae,elequis convallis elit, in viverra felis. Donec ultrices tellus vitae iaculisvd porta. Proin tincidunt ligula id purus porttitor.', imgForSlider: [
+                    { id: "img1", url: "slider-proj.jpg" },
+                    { id: "img2", url: "slider-proj2.jpg" },
+                    { id: "img3", url: "slider-proj3.jpg" },
+                ],
+            },
+            {
+                id: 18, title: 'Minimal Bedroom', text: 'Decor / Artchitecture', img: 'proj2.jpg', classHomepage: 'borderBotLeft', category: 'Bedroom', classProjectPage: 'project-list-small', textDescription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquamsem vitae turpis dignissim maximus. Aliquam sollicitudin tellumassa, vbel maximus purus posuere in. Dojrices gravida dignissim. Praesent at nibh in mi fringilla mattis. Phasellus ut dolor odio. Aenean in the ipsum vel lectus bibendum commodo.', textDescription2: 'In nec sem suscipit, convallis leo vitae, lacinia nibh. Cras amet tellus lectus. Vivamus ipsum nunc, mattis quis nibh id, pellentesque arcu. Donec a pellentesque Cras erat enim, gravida non ante vitae,elequis convallis elit, in viverra felis. Donec ultrices tellus vitae iaculisvd porta. Proin tincidunt ligula id purus porttitor.', imgForSlider: [
+                    { id: "img1", url: "slider-proj.jpg" },
+                    { id: "img2", url: "slider-proj2.jpg" },
+                    { id: "img3", url: "slider-proj3.jpg" },
+                ],
+            },
+            {
+                id: 19, title: 'Classic Minimal Bedroom', text: 'Decor / Artchitecture', img: 'proj3.jpg', classHomepage: 'borderBotLeft', category: 'Bedroom', classProjectPage: 'project-list-small', textDescription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquamsem vitae turpis dignissim maximus. Aliquam sollicitudin tellumassa, vbel maximus purus posuere in. Dojrices gravida dignissim. Praesent at nibh in mi fringilla mattis. Phasellus ut dolor odio. Aenean in the ipsum vel lectus bibendum commodo.', textDescription2: 'In nec sem suscipit, convallis leo vitae, lacinia nibh. Cras amet tellus lectus. Vivamus ipsum nunc, mattis quis nibh id, pellentesque arcu. Donec a pellentesque Cras erat enim, gravida non ante vitae,elequis convallis elit, in viverra felis. Donec ultrices tellus vitae iaculisvd porta. Proin tincidunt ligula id purus porttitor.', imgForSlider: [
+                    { id: "img1", url: "slider-proj.jpg" },
+                    { id: "img2", url: "slider-proj2.jpg" },
+                    { id: "img3", url: "slider-proj3.jpg" },
+                ],
+            },
+            {
+                id: 20, title: 'Modern Bedroom', text: 'Decor / Artchitecture', img: 'proj4.jpg', classHomepage: 'borderBotLeft', category: 'Bedroom', classProjectPage: 'project-list-big', textDescription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquamsem vitae turpis dignissim maximus. Aliquam sollicitudin tellumassa, vbel maximus purus posuere in. Dojrices gravida dignissim. Praesent at nibh in mi fringilla mattis. Phasellus ut dolor odio. Aenean in the ipsum vel lectus bibendum commodo.', textDescription2: 'In nec sem suscipit, convallis leo vitae, lacinia nibh. Cras amet tellus lectus. Vivamus ipsum nunc, mattis quis nibh id, pellentesque arcu. Donec a pellentesque Cras erat enim, gravida non ante vitae,elequis convallis elit, in viverra felis. Donec ultrices tellus vitae iaculisvd porta. Proin tincidunt ligula id purus porttitor.', imgForSlider: [
+                    { id: "img1", url: "slider-proj.jpg" },
+                    { id: "img2", url: "slider-proj2.jpg" },
+                    { id: "img3", url: "slider-proj3.jpg" },
+                ],
+            },
+            {
+                id: 21, title: 'Minimal Bedroom table', text: 'Decor / Artchitecture', img: 'proj5.jpg', classHomepage: 'borderBotLeft', category: 'Bedroom', classProjectPage: 'project-list-big', textDescription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquamsem vitae turpis dignissim maximus. Aliquam sollicitudin tellumassa, vbel maximus purus posuere in. Dojrices gravida dignissim. Praesent at nibh in mi fringilla mattis. Phasellus ut dolor odio. Aenean in the ipsum vel lectus bibendum commodo.', textDescription2: 'In nec sem suscipit, convallis leo vitae, lacinia nibh. Cras amet tellus lectus. Vivamus ipsum nunc, mattis quis nibh id, pellentesque arcu. Donec a pellentesque Cras erat enim, gravida non ante vitae,elequis convallis elit, in viverra felis. Donec ultrices tellus vitae iaculisvd porta. Proin tincidunt ligula id purus porttitor.', imgForSlider: [
+                    { id: "img1", url: "slider-proj.jpg" },
+                    { id: "img2", url: "slider-proj2.jpg" },
+                    { id: "img3", url: "slider-proj3.jpg" },
+                ],
+            },
+            {
+                id: 22, title: 'System Table', text: 'Decor / Artchitecture', img: 'proj6.jpg', classHomepage: 'borderBotLeft', category: 'Bedroom', classProjectPage: 'project-list-small', textDescription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquamsem vitae turpis dignissim maximus. Aliquam sollicitudin tellumassa, vbel maximus purus posuere in. Dojrices gravida dignissim. Praesent at nibh in mi fringilla mattis. Phasellus ut dolor odio. Aenean in the ipsum vel lectus bibendum commodo.', textDescription2: 'In nec sem suscipit, convallis leo vitae, lacinia nibh. Cras amet tellus lectus. Vivamus ipsum nunc, mattis quis nibh id, pellentesque arcu. Donec a pellentesque Cras erat enim, gravida non ante vitae,elequis convallis elit, in viverra felis. Donec ultrices tellus vitae iaculisvd porta. Proin tincidunt ligula id purus porttitor.', imgForSlider: [
+                    { id: "img1", url: "slider-proj.jpg" },
+                    { id: "img2", url: "slider-proj2.jpg" },
+                    { id: "img3", url: "slider-proj3.jpg" },
+                ],
+            },
+            {
+                id: 23, title: 'Modern Bedroom', text: 'Decor / Artchitecture', img: 'proj7.jpg', classHomepage: 'borderBotLeft', category: 'Bedroom', classProjectPage: 'project-list-small', textDescription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquamsem vitae turpis dignissim maximus. Aliquam sollicitudin tellumassa, vbel maximus purus posuere in. Dojrices gravida dignissim. Praesent at nibh in mi fringilla mattis. Phasellus ut dolor odio. Aenean in the ipsum vel lectus bibendum commodo.', textDescription2: 'In nec sem suscipit, convallis leo vitae, lacinia nibh. Cras amet tellus lectus. Vivamus ipsum nunc, mattis quis nibh id, pellentesque arcu. Donec a pellentesque Cras erat enim, gravida non ante vitae,elequis convallis elit, in viverra felis. Donec ultrices tellus vitae iaculisvd porta. Proin tincidunt ligula id purus porttitor.', imgForSlider: [
+                    { id: "img1", url: "slider-proj.jpg" },
+                    { id: "img2", url: "slider-proj2.jpg" },
+                    { id: "img3", url: "slider-proj3.jpg" },
+                ],
+            },
+            {
+                id: 24, title: 'Modern Bedroom', text: 'Decor / Artchitecture', img: 'proj8.jpg', classHomepage: 'borderBotLeft', category: 'Bedroom', classProjectPage: 'project-list-small', textDescription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquamsem vitae turpis dignissim maximus. Aliquam sollicitudin tellumassa, vbel maximus purus posuere in. Dojrices gravida dignissim. Praesent at nibh in mi fringilla mattis. Phasellus ut dolor odio. Aenean in the ipsum vel lectus bibendum commodo.', textDescription2: 'In nec sem suscipit, convallis leo vitae, lacinia nibh. Cras amet tellus lectus. Vivamus ipsum nunc, mattis quis nibh id, pellentesque arcu. Donec a pellentesque Cras erat enim, gravida non ante vitae,elequis convallis elit, in viverra felis. Donec ultrices tellus vitae iaculisvd porta. Proin tincidunt ligula id purus porttitor.', imgForSlider: [
+                    { id: "img1", url: "slider-proj.jpg" },
+                    { id: "img2", url: "slider-proj2.jpg" },
+                    { id: "img3", url: "slider-proj3.jpg" },
+                ],
+            },
         ],
     },
     mutations: {

@@ -1,28 +1,21 @@
 <template>
   <div id="app">
-    <!-- <IndexPage />    -->
-    <!-- <BlogPage />  -->
-    <!-- <BlogDetailsPage /> -->
-    <!-- <ProjectsPage /> -->
-    <ProjectDetailsPage />
+    <HeaderBlock />
+    <main>
+      <router-view />
+    </main>
+    <FooterBlock />
   </div>
 </template>
 
 <script>
-// import IndexPage from './pages/IndexPage.vue'
-// import BlogPage from './pages/BlogPage.vue'
-// import BlogDetailsPage from './pages/BlogDetailsPage.vue'
-// import ProjectsPage from './pages/ProjectsPage.vue'
-import ProjectDetailsPage from "./pages/ProjectDetailsPage.vue";
-
+import HeaderBlock from "@/blocks/HeaderBlock.vue";
+import FooterBlock from "@/blocks/FooterBlock.vue";
 export default {
   name: "App",
   components: {
-    // IndexPage,
-    // BlogPage,
-    // BlogDetailsPage,
-    // ProjectsPage,
-    ProjectDetailsPage,
+    HeaderBlock,
+    FooterBlock,
   },
 };
 </script>

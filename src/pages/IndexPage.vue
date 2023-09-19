@@ -1,34 +1,26 @@
 <template>
-    <div>
-        <HeaderBlock />
-        <BannerMainPage />
-        <ProjectBlog />
-        <CounterBlock />
-        <BlogBlock />
-        <FooterBlock />
-    </div>
+  <div>
+    <BannerMainPage />
+    <ProjectBlog />
+    <CounterBlock />
+    <BlogBlock />
+  </div>
 </template>
 
 <script>
-import HeaderBlock from '../blocks/HeaderBlock.vue'
-import BannerMainPage from '../blocks/BannerMainPage.vue'
-import ProjectBlog from '../blocks/ProjectBlog.vue'
-import CounterBlock from '../blocks/CounterBlock.vue'
-import BlogBlock from '../blocks/BlogBlock.vue'
-import FooterBlock from '../blocks/FooterBlock.vue'
-
-
+import BannerMainPage from "../blocks/BannerMainPage.vue";
+import ProjectBlog from "../blocks/ProjectBlog.vue";
+import CounterBlock from "../blocks/CounterBlock.vue";
+import BlogBlock from "../blocks/BlogBlock.vue";
 
 export default {
-    name: 'IndexPage',
-    components: {
-        HeaderBlock,
-        BannerMainPage,
-        ProjectBlog,
-        CounterBlock,
-        BlogBlock,
-        FooterBlock
-    },
+  name: "IndexPage",
+  components: {
+    BannerMainPage,
+    ProjectBlog,
+    CounterBlock,
+    BlogBlock,
+  },
 };
 </script>
 

@@ -1,17 +1,13 @@
 <template>
-    <div>
-        <HeaderBlock />
+    <div>        
         <BannerPages :isShowTitle="true" :classOfBanner="classOfBanner"/>        
         <PostLatest />
         <PostList />
-        <FooterBlock />
     </div>
 </template>
 
 <script>
-import HeaderBlock from '../blocks/HeaderBlock.vue'
 import BannerPages from '../blocks/BannerPages.vue'
-import FooterBlock from '../blocks/FooterBlock.vue'
 import PostLatest from '../blocks/PostLatest.vue'
 import PostList from '../blocks/PostList.vue'
 
@@ -20,9 +16,7 @@ import PostList from '../blocks/PostList.vue'
 export default {
     name: 'BlogPage',
     components: {
-        HeaderBlock,
         BannerPages,
-        FooterBlock,
         PostLatest,
         PostList
     },

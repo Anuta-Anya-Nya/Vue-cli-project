@@ -1,7 +1,7 @@
 <template>
   <header class="header">
     <div class="header__box container">
-      <a href="index.html" class="logo">
+      <router-link to="/main" class="logo">
         <svg
           width="34"
           height="34"
@@ -15,11 +15,12 @@
           />
         </svg>
         {{ logoBrand }}
-      </a>
+      </router-link>
+
       <nav class="header__menu">
         <ul class="header__list">
           <li v-for="(link, index) in headerMenuLinks" :key="index">
-            <a :href="link.url">{{ link.text }}</a>
+            <router-link :to="link.url">{{ link.text }}</router-link>
           </li>
         </ul>
       </nav>
@@ -35,9 +36,9 @@ export default {
     return {
       logoBrand: "Interno",
       headerMenuLinks: [
-        { url: "index.html", text: "Home" },
-        { url: "projects.html", text: "Project" },
-        { url: "blog.html", text: "Blog" },
+        { url: "/main", text: "Home" },
+        { url: "/project", text: "Project" },
+        { url: "/blog", text: "Blog" },
       ],
     };
   },

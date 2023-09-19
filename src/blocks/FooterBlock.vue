@@ -2,7 +2,7 @@
   <footer class="footer">
     <div class="footer-box container">
       <div class="footer__leftPart">
-        <a href="index.html" class="logo">
+        <router-link to="/main" class="logo">
           <svg
             width="34"
             height="34"
@@ -16,7 +16,7 @@
             />
           </svg>
           Interno
-        </a>
+        </router-link>
         <p class="footer__text">
           It is a long established fact that a reader will be distracted
           lookings.
@@ -62,7 +62,7 @@
         <h3 class="footer__heading">Pages</h3>
         <ul>
           <li v-for="(link, index) in footerMenuLinks" :key="index">
-            <a :href="link.url">{{ link.text }}</a>
+            <router-link :to="link.url">{{ link.text }}</router-link>
           </li>
         </ul>
       </nav>
@@ -86,9 +86,9 @@ export default {
   data() {
     return {
       footerMenuLinks: [
-        { url: "index.html", text: "Home" },
-        { url: "projects.html", text: "Project" },
-        { url: "blog.html", text: "Blog" },
+        { url: "/main", text: "Home" },
+        { url: "/project", text: "Project" },
+        { url: "/blog", text: "Blog" },
       ],
     };
   },
@@ -100,9 +100,11 @@ export default {
   a {
     text-decoration: none;
   }
+
   ul {
     padding-left: 0px;
   }
+
   margin-bottom: 134px;
 
   &-box {
@@ -183,6 +185,7 @@ export default {
     }
   }
 }
+
 .logo {
   font-family: "DM Serif Display", serif;
   font-size: 40px;

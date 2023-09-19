@@ -8,7 +8,7 @@
             :post="post"
             class="blog-item"/>
         </div>
-        <PaginationComponent />
+        <PaginationComponent :whatPage="`/blog`" :quantityPages="quantityPages"/>
       </section>
 </template>
 
@@ -18,7 +18,12 @@ import BlogArticle from '../components/BlogArticle.vue'
 import PaginationComponent from '../components/PaginationComponent.vue'
 export default {
     name: 'PostList',
-    components: {BlogArticle, PaginationComponent},    
+    components: {BlogArticle, PaginationComponent}, 
+    data() {
+        return {
+            quantityPages: 3,
+        }
+    },   
     computed: {
         ...mapGetters(['postsForBlog'])
     }   
