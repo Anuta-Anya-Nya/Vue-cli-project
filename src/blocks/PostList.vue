@@ -2,14 +2,11 @@
     <section class="articles container">
         <h3 class="articles__title">Articles & News</h3>
 
-        <div class="blog__box articles__margin">         
-          <BlogArticle v-for="post in postsForBlog"
-            :key="post.id"
-            :post="post"
-            class="blog-item"/>
+        <div class="blog__box articles__margin">
+            <BlogArticle v-for="post in splitArticlesByPage" :key="post.id" :post="post" class="blog-item" />
         </div>
-        <PaginationComponent :whatPage="`/blog`" :quantityPages="quantityPages"/>
-      </section>
+        <PaginationComponent :whatPage="`/blog`" :quantityPages="quantityPages" @selectPage="selectPage" />
+    </section>
 </template>
 
 <script>
@@ -18,15 +15,30 @@ import BlogArticle from '../components/BlogArticle.vue'
 import PaginationComponent from '../components/PaginationComponent.vue'
 export default {
     name: 'PostList',
-    components: {BlogArticle, PaginationComponent}, 
+    components: { BlogArticle, PaginationComponent },
     data() {
         return {
-            quantityPages: 3,
+            currentPage: 1,
+            countProjectsOnList: 6,
         }
-    },   
+    },
     computed: {
-        ...mapGetters(['postsForBlog'])
-    }   
+        ...mapGetters(['postsForBlog']),
+        splitArticlesByPage() {
+            const startIndex = (this.currentPage - 1) * this.countProjectsOnList;
+            const endIndex = startIndex + this.countProjectsOnList;
+            return this.postsForBlog.slice(startIndex, endIndex);
+        },
+        quantityPages() {
+            return Math.ceil(this.postsForBlog.length / this.countProjectsOnList)
+        }
+
+    },
+    methods: {
+        selectPage(pageValue) {
+            this.currentPage = +pageValue;
+        },
+    },
 };
 </script>
 
@@ -51,10 +63,10 @@ export default {
     }
 
 }
-.blog__box {
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-    }
 
+.blog__box {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
 </style>
