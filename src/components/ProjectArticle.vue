@@ -6,7 +6,7 @@
                 <h4 class="proj-item__title">{{ item.title }}</h4>
                 <p class="proj-item__text">{{ item.text }}</p>
             </div>
-            <RoundBtn />
+            <RoundBtn :link="linkForButton"/>
         </div>
     </div>
 </template>
@@ -21,8 +21,10 @@ export default {
     data() {
         return {
             pageThisArticle: 'homePage',
+            linkForButton: `/projectDetails/${this.item.id}`
         };
     },
+    
 };
 </script>
 

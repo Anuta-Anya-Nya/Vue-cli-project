@@ -34,6 +34,7 @@
 export default {
   name: "PaginationComponent",
   props: ["whatPage", "quantityPages"],
+  
   watch: {
     $route(to, from) {
       console.log(to, from);

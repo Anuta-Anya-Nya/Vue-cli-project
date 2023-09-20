@@ -7,7 +7,8 @@
             <h4 class="blog-item__title">{{post.title}}</h4>
             <div class="blog-item__line">
               <div class="blog-item__data">{{post.dataArticle}}</div>
-              <svg
+              <router-link :to="linkForButton">
+                <svg
                 width="52"
                 height="53"
                 viewBox="0 0 52 53"
@@ -23,6 +24,8 @@
                   stroke-linejoin="round"
                 />
               </svg>
+              </router-link>
+              
             </div>
           </article> 
 </template>
@@ -34,7 +37,7 @@ export default {
 
     data() {
         return {
-            
+            linkForButton: `/blogdetails/${this.post.id}`
         };
     },
 

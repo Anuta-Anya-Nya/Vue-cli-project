@@ -4,7 +4,7 @@
     <main>
       <router-view />
     </main>
-    <FooterBlock />
+    <FooterBlock v-show="showFooter"/>
   </div>
 </template>
 
@@ -16,6 +16,15 @@ export default {
   components: {
     HeaderBlock,
     FooterBlock,
+  },
+  computed: {
+    showFooter(){
+      console.log(this.$routes);
+      return false;
+    }
+  },
+  mounted() {
+    console.log(this.$route);
   },
 };
 </script>

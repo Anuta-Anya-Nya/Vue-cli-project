@@ -3,32 +3,39 @@
     <div class="heading">
       <h3 class="heading__title">Follow Our Projects</h3>
       <p class="heading__text">
-        It is a long established fact that a reader will be distracted by
-        the of readable content of page lookings at its layouts points.
+        It is a long established fact that a reader will be distracted by the of
+        readable content of page lookings at its layouts points.
       </p>
     </div>
     <div class="project__box">
-      <ProjectArticle v-for="item in projectForIndex" :key="item.id" :item='item' :page="page" />
+      <ProjectArticle
+        v-for="item in projectForIndex"
+        :key="item.id"
+        :item="item"
+        :page="page"
+      />
     </div>
   </section>
 </template>
 
 <script>
-import { mapGetters } from 'vuex';
-import ProjectArticle from '../components/ProjectArticle.vue';
+import { mapGetters } from "vuex";
+import ProjectArticle from "../components/ProjectArticle.vue";
 export default {
-
-  name: 'ProjectBlog',
+  name: "ProjectBlog",
   components: { ProjectArticle },
 
   data() {
     return {
-      page: 'homePage',
+      page: "homePage",
     };
   },
 
   computed: {
-    ...mapGetters(['projectForIndex'])
+    ...mapGetters(["projectForIndex"]),
+  },
+  methods: {
+    
   },
 };
 </script>
@@ -39,9 +46,9 @@ export default {
   margin: 93px auto;
 
   &__title {
-    color: #292F36;
+    color: #292f36;
     text-align: center;
-    font-family: 'DM Serif Display', serif;
+    font-family: "DM Serif Display", serif;
     font-size: 50px;
     font-style: normal;
     font-weight: 400;
@@ -51,9 +58,9 @@ export default {
   }
 
   &__text {
-    color: #4D5053;
+    color: #4d5053;
     text-align: center;
-    font-family: 'Jost', sans-serif;
+    font-family: "Jost", sans-serif;
     font-size: 22px;
     font-style: normal;
     font-weight: 400;
@@ -72,6 +79,5 @@ export default {
     column-gap: 104px;
     row-gap: 56px;
   }
-
 }
 </style>
