@@ -4,7 +4,7 @@
     <main>
       <router-view />
     </main>
-    <FooterBlock v-show="showFooter"/>
+    <FooterBlock v-show="!notShowFooter"/>
   </div>
 </template>
 
@@ -18,13 +18,9 @@ export default {
     FooterBlock,
   },
   computed: {
-    showFooter(){
-      console.log(this.$routes);
-      return false;
+    notShowFooter(){
+      return this.$route.matched[0].components.default.name === 'NotFoundPage';      
     }
-  },
-  mounted() {
-    console.log(this.$route);
   },
 };
 </script>
